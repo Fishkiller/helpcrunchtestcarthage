@@ -12,7 +12,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) NSString *applicationSecret;
 
 @property (nonatomic) BOOL isLoggingEnabled;
-@property (nonatomic) BOOL isBrandingEnabled;
+
+/**
+ Server-based properties.
+ */
+@property (nonatomic, readonly) BOOL isBrandingVisible;
+@property (nonatomic, readonly) BOOL isFileAttachmentAllowed;
 
 /**
  @summary
