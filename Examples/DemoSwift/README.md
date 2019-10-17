@@ -58,18 +58,18 @@ and change initialization method to:
     }
 ```
 
-### Welcome screen
+## Prechat form screen
 
-If you want to try our Welcome screen, where you ask user to provide some information, remove HCSUser as it said in Logout section before and uncomment next line:
+If you want to try pre chat form, where you ask user to provide some information, check this method in ViewController.m:
 ```
-    setupWelcomeScreen(configuration: configuration)
+    @IBAction func preformSwitchChanged(_ sender: Any)
 ```
 
-In this method you can add/remove any user attributes you want. For more information, please check [this link](https://docs.helpcrunch.com/ios-sdk.html?#welcome-screen).
+In this method you can see how you can set attributes that will be asked in pre chat form. For more information, please check [this link](https://docs.helpcrunch.com/ios-sdk.html?#welcome-screen).
 
 ## Theming
 
 You can check our standard and dark themes simply by clicking on them in the main menu before you start chat. If you want to play with custom theme, that we provided for you as example, check this method in ViewController.m:
 ```
-    func setupWelcomeScreen(configuration: HCSConfiguration)
+    func setCustomTheme()
 ```
